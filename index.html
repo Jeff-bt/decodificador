@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Decodificador de Texto</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Decodificador de Texto</h1>
+        </header>
+        <main class="container">
+            <section class="conteudo-principal">
+                <textarea class="texto-entrada" id="entrada" placeholder="Digite seu texto"></textarea>
+                <p class="alerta">⚠ Apenas letras minúsculas e sem acento.</p>
+                <div class="botao-principal">
+                    <button class="botao-criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="botao-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </section>
+            
+            <section class="conteudo-secundario">
+                <textarea class="texto-saida" id="saida"></textarea>
+                <div class="informacao" id="informacao" >
+                    <p class="informacao-principal" id="erroCopiar">Nenhum mensagem encontrada</p>
+                    <p class="informacao-segundaria" >Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+                <button class="botao-copiar" onclick="copiar()">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <ul class="rodape-social"> 
+                <li><a href="https://github.com/Jeff-bt/"><img src="./imagens/GitHub_logo.png"  alt="Logo do GitHub" class="rodape-midia"></a></li>
+                <li><a href="https://www.linkedin.com/in/jeff-bt/"><img src="./imagens/linkedIn_logo.png"  alt="Logo do LinkedIn" class="rodape-midia"></a></li>
+            </ul>
+            <p class="copyright">&copy; 2023 | Desenvolvido por Jefferson Silva | Alura</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
